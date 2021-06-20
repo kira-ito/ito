@@ -1,181 +1,90 @@
-body {
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.top-wrapper {
-    padding: 180px 0 100px 0;
-    background-image: url(https://prog-8.com/images/html/advanced/top.png);
-    background-size: cover;
-    color: white;  
-    text-align: center;
-}
-
-.top-wrapper h1 {
-    opacity: .7;
-    font-size: 45px;
-    letter-spacing: 5px;
-    color: white;
-}
-
-.top-wrapper p {
-    opacity: .7;
-}
-
-.btn {
-    padding: 8px 24px;
-    display: inline-block;
-    opacity: .8;
-    color: white;
-    border-radius: 4px;
-}
-
-.btn:hover {
-    opacity: 1;
-}
-
-.signup {
-    background-color: #239b76;
-}
-
-.facebook {
-    background-color: #3b5998;
-    margin-right: 10px;
-}
-
-.twitter {
-    background-color: #55acee;
-}
-
-.btn-wrapper {
-    margin: 20px 0;
-}
-
-.btn-wrapper p {
-    margin: 10px 0;
-}
-
-.fa {
-    margin-right: 5px;
-}
-
-header {
-    height: 65px;
-    background-color: rgba(34, 49, 52, 0.9);
+.header {
+    background-color: tomato;
+    height: 120px;
+    float: left;
+    padding: 20px 40px 40px 40px;
+    width: 100%;
     position: fixed;
-    top: 0;
-    z-index: 10;    /*要素の重なり順を指定*/
-    width: 100%;    /*親要素から切り離されてレイアウト崩れるので横幅を指定する*/
+    top: 0;             /*ヘッダを上部に固定する*/
+    z-index: 100;   /*ヘッダ要素を前面に固定する*/
+
+    font-weight: bold;
 }
 
-.logo {
-    width: 124px;
-    margin-top: 20px;
+.main {
+
+
 }
 
-.header-left {
+h1 {
+    padding-top: 40px;
+}
+
+.contents {
+    height: 500px;
+}
+
+.section {
+    border-bottom: 2px solid #000;
+}
+
+.item {
     float: left;
 }
 
-.header-right {
+.container h1 {
+    font-size: 140px;
+}
+
+.container h2 {
+    font-size: 60px;
+}
+
+.container span {
+    color: #ff4a4a;
+}
+
+.footer {
+    background-color: #ceccf3;
+    height: 270px;
+
+}
+
+li {
+    list-style: none;
+}
+
+.header-logo {
+    font-size: 36px;
+    float: left;
+    padding: 20px 40px 20px 40px;
+}
+
+.header-list li {
     float: right;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: all .5s;
+    padding: 33px 20px;
 }
 
-.header-right:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
 }
 
-.header-right a {
-    color: white;
-    padding: 0 25px;
-    line-height: 65px;
-    display: block;
+.footer-logo {
+    font-size: 32px;
+    float: left;
 }
 
-.lesson {
-    float:left;
-    width:25%;
+.footer-list {
+    float: right;
 }
 
-.lesson-wrapper {
-    height: 600px;
-    padding-bottom: 80px;
-    background-color: #f7f7f7;
-    text-align: center;
+.footer-list li {
+    padding-bottom: 0px;
 }
 
-.heading {
-    padding: 60px 0 30px 0;
-    color: #5f5d60;
-}
-
-.lesson-wrapper h2 {
-    font-weight: normal;
-}
-
-.lesson-icon  {
-    position: relative;
-}
-
-.lesson-icon p {
-    position: absolute;
-    top:80px;
-    width:100%;
-    color: white;
-}
-
-.txt-contents {
-    width: 80%;
-    font-size: 12px;
-    color:#b3aeb5;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.message-wrapper {
-    padding-bottom: 70px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-button {
-    background-color: #5dca88;
-    padding: 15px 40px 15px 40px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    box-shadow: 0px 7px #1a7940 ;
-    cursor: pointer;
-}
-
-button:active {
-    position: relative;
-    top: 7px;
-    box-shadow: none;
-}
-
-footer img {
-    width: 125px;
-}
-
-footer p {
-    color:#b3aeb5;
-    font-size:12px;
-  
-}
-
-footer {
-    padding-top: 30px;
+.footer-list ul {
+    margin: auto;
 }
